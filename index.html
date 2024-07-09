@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body  style="overflow-x:hidden; overflow-y:hidden">
+    <div class="Encriptador">
+        <div class="Encriptador__imagen">
+            <img src="./Images/Logo.png" alt="logo"/>
+        </div>
+        <div class="Encriptador__texto">
+            <div class="Encriptador__texto__box">
+                <textarea 
+                    name="texto" 
+                    id="texto" 
+                    class="Encriptador__texto__cuadro"
+                    cols="60"
+                    rows="30"
+                    placeholder="Ingrese el texto aqui">
+                </textarea>
+            </div>
+            <div class="Encriptador__texto__terminos">
+                <img src="./Images/Group.png"/>
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="Encriptador__boton">
+                <button 
+                    class="Encriptador__boton__encriptar"
+                    type="button"
+                    onclick="encriptar()">Encriptar</button>
+                <button 
+                    class="Encriptador__boton__desencriptar"
+                    type="button"
+                    onclick="desencriptar()"
+                    disabled>Desencriptar</button>
+            </div>
+        </div>
+        <div class="Encriptador__respuesta">
+            <div class="Encriptador__respuesta__box">
+                <img src="./Images/Muñeco.png"/>
+                <div class="Encriptador__respuesta__box__mensajes">
+                    <h2 class="Encriptador__respuesta__box__mensajes__titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="Encriptador__respuesta__box__mensajes__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer-copyright"> Creado por Jeison Guerrero</p>
+        <img src="./Images/github.png" alt="github">
+        <a>Github</a>
+        <img src="./Images/linkedin.png" alt="linkedin">
+        <a>Linkedin</a>
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>
