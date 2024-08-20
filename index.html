@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css"/>
 </head>
-<body  style="overflow-x:hidden; overflow-y:hidden">
-    <div class="Encriptador">
+<body>
+    <div class="Encriptador__box">
         <div class="Encriptador__imagen">
             <img src="./Images/Logo.png" alt="logo"/>
         </div>
@@ -17,14 +17,14 @@
                     name="texto" 
                     id="texto" 
                     class="Encriptador__texto__cuadro"
-                    cols="60"
-                    rows="30"
+                    cols="20"
+                    rows="9"
                     placeholder="Ingrese el texto aqui">
                 </textarea>
             </div>
             <div class="Encriptador__texto__terminos">
                 <img src="./Images/Group.png"/>
-                <p>Solo letras minúsculas y sin acentos.</p>
+                <p class="Encriptador__texto__terminos_texto">Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="Encriptador__boton">
                 <button 
@@ -38,23 +38,29 @@
                     disabled>Desencriptar</button>
             </div>
         </div>
-        <div class="Encriptador__respuesta">
+        <div class="Encriptador__respuesta" id="boxRespuesta">
             <div class="Encriptador__respuesta__box">
-                <img src="./Images/Muñeco.png"/>
+                <img class="Encriptador__respuesta__imagen" id="imagen" src="./Images/Muñeco.png"/>
                 <div class="Encriptador__respuesta__box__mensajes">
-                    <h2 class="Encriptador__respuesta__box__mensajes__titulo">Ningún mensaje fue encontrado</h2>
-                    <p class="Encriptador__respuesta__box__mensajes__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <h2 id = "tituloRespuesta" class="Encriptador__respuesta__box__mensajes__titulo">Ningún mensaje fue encontrado</h2>
+                    <p id="parrafoRespuesta" class="Encriptador__respuesta__box__mensajes__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
         </div>
+        <div class="Resultado" id="boxResultado">
+            <textarea class="Resultado__mensaje" id="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="Resultado__copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
     </div>
-    <footer class="footer">
+    <footer class="footer__box">
         <p class="footer-copyright"> Creado por Jeison Guerrero</p>
         <img src="./Images/github.png" alt="github">
         <a>Github</a>
         <img src="./Images/linkedin.png" alt="linkedin">
         <a>Linkedin</a>
     </footer>
+    <script src="./index.js"></script>
 </body>
-<script src="./index.js"></script>
 </html>
