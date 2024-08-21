@@ -92,8 +92,13 @@
     font-size: 1.6rem;
     background-color: var(--color-primario);
     color: var(--color-terciario);
-    cursor: not-allowed;
+    cursor: pointer;
 }
+
+.Encriptador__boton__desencriptar:hover{
+    background-color: gray;
+}
+
 
 .Encriptador__respuesta{
     background-color: var(--color-secundario);
@@ -113,4 +118,48 @@
 
 .Encriptador__respuesta__imagen{
     width: 80%;
+}
+
+.Resultado{
+    height: 94.4%;
+    width: 30%;
+    border-radius: 32px;
+    background-color: white; 
+    margin: 0px 40px 0px 40px;
+}
+
+.Resultado__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Resultado__mensaje{
+    color: gray;
+    background-color: white;
+    font-size: 2.4rem;
+    font-family: var(--fuente-inter);
+    border: none;
+    border-radius: 32px;
+    resize: none;
+    outline: none;
+    margin: 32px;
+    width: 336px;
+    height: 390px;
+}
+
+.Resultado__copiar{
+    border: 1px solid;
+    border-radius: 24px;
+    border-color: var(--color-terciario);
+    box-shadow: none;
+    font-family: var(--fuente-inter);
+    padding: 24px;
+    width: 336px;
+    margin-right: 24px;
+    font-size: 1.6rem;
+    background-color: white;
+    color: var(--color-terciario);
+    cursor: pointer;
 }

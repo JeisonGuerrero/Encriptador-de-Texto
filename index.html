@@ -33,9 +33,10 @@
                     onclick="encriptar()">Encriptar</button>
                 <button 
                     class="Encriptador__boton__desencriptar"
+                    id="desencriptar"
                     type="button"
                     onclick="desencriptar()"
-                    disabled>Desencriptar</button>
+                    >Desencriptar</button>
             </div>
         </div>
         <div class="Encriptador__respuesta" id="boxRespuesta">
@@ -48,8 +49,8 @@
             </div>
         </div>
         <div class="Resultado" id="boxResultado">
-            <textarea class="Resultado__mensaje" id="mensaje" cols="20" rows="10"></textarea>
-            <div>
+            <div class="Resultado__box">
+                <textarea class="Resultado__mensaje" id="mensaje" cols="16" rows="10" disabled></textarea>
                 <button class="Resultado__copiar" id="copiar" onclick="copiar()">Copiar</button>
             </div>
         </div>
