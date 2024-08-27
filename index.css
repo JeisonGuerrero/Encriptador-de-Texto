@@ -14,6 +14,9 @@
     margin: 0px;
     padding: 0px;
 }
+a{
+    text-decoration: none;
+}
 
 .Encriptador__box {
     display: flex;
@@ -145,8 +148,8 @@
     resize: none;
     outline: none;
     margin: 32px;
-    width: 336px;
-    height: 390px;
+    width: 30%;
+    height: 100%;
 }
 
 .Resultado__copiar{
@@ -156,10 +159,51 @@
     box-shadow: none;
     font-family: var(--fuente-inter);
     padding: 24px;
-    width: 336px;
-    margin-right: 24px;
+    width: 336px;;
     font-size: 1.6rem;
     background-color: white;
     color: var(--color-terciario);
     cursor: pointer;
+}
+
+@media (max-width: 1240px) {
+    .Encriptador__respuesta{
+        width: 90%;
+    }
+    .Encriptador__box{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 1%;
+    }
+    .Encriptador__respuesta__imagen{
+        display: none;
+    }
+    .Resultado{
+        width: 80%;
+        border-radius: 32px;
+        background-color: white; 
+        margin: 0px 40px 0px 40px;
+    }
+
+    .Resultado__box{
+        margin: 50px;
+    }
+    
+    .Encriptador__boton{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .Encriptador__boton{
+        display: flex;
+        flex-direction: column;
+    }
+    .Encriptador__boton__encriptar{
+        margin-bottom: 10%;
+    }
+    .Resultado__copiar{
+        width: 90%;
+    }
 }
